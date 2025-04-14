@@ -1,0 +1,44 @@
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+/* Box that will animate */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin: 50px auto;
+    transition: all 1s ease-in-out;
+}
+
+/* Animation for box */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* This class will trigger the bounce animation */
+.animate {
+    animation: bounce 1s ease-in-out;
+}
+
+/* Styling for the button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
